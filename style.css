@@ -255,6 +255,7 @@ body {
     position: absolute;
     bottom: -20px;
     left: 100px;
+    rotate: 0deg;
 }
 
 
@@ -269,6 +270,7 @@ body {
     position: absolute;
     bottom: -20px;
     right: 100px;
+    rotate: 0deg;
 }
 
 .palm {
@@ -341,4 +343,25 @@ body {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+
+    .leg-r , .leg-l {
+        animation: mymove 2s infinite alternate;
+    }
 }
+
+@keyframes mymove {
+    0% {
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: 45deg
+    }
+
+    100% {
+        rotate: -45deg;
+    }
+
+  }
+  
+
